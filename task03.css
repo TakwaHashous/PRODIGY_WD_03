@@ -1,0 +1,68 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  #game-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  #game-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #f08080; /* Light pink */
+  }
+  
+  #board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .cell:hover {
+    background-color: #80c4e1;
+  }
+  
+  .cell.x {
+    color: #3498db; /* Light blue */
+  }
+  
+  .cell.o {
+    color: #f97171; /* Light red */
+  }
+  
+  #reset-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #428bca; /* Light blue */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  #reset-button:hover {
+    background-color: #c61162; /* Darker blue */
+  }
